@@ -1,0 +1,90 @@
+body
+{
+    font-family: "Segoe UI", sans-serif;
+    margin: 1em;
+}
+
+#jsonContent
+{
+    font-size: small;
+}
+
+#myButton
+{
+    display:block;
+    margin: auto;
+    cursor: pointer;
+}
+
+#messageBox
+{
+    display:block;
+    width:auto;
+    background-color:lightpink;
+    color:black;
+    font-weight:bold;
+}
+
+#reposList
+{
+    margin: 0.5em;
+    padding:0.5em;
+    border:1px solid silver;
+    display:block;
+    clear:left;
+    float:left;
+    width:45%;
+    min-width: 300px;
+}
+#tblRepos
+{
+    display: table;
+    margin: 1em;
+    width: auto;
+    border: 1px solid silver;
+}
+.rowRepos
+{
+    display:table-row;
+    width:auto;
+}
+.cellRepos
+{
+    display:table-cell;
+    border:1px solid black
+    margin:0.5em;
+    padding:0.5em;
+    width:auto;
+    max-width:350px;
+    word-wrap: break-word;
+}
+
+.headerRepos
+{
+    display:table-cell;
+    background-color:silver;
+    font-weight: bold;
+    text-align: center;
+}
+#searchTerm
+{
+    font-size:small;
+    background-color:lightgrey;
+    borde:1px solid silver;
+}
+#searchList
+{
+    margin:0.5em;
+    padding:0.5em;
+    border:1px solid silver;
+    background-color:paleyellow;
+    display:block;
+    clear:none;
+    float:left;
+    width:45%;
+    min-width:350px;
+}
+#tblSearchResults tr td:first-child
+{
+    font-weight:bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialHackersAcademy Test 1</title>
+    <link href="css/SocialHackersTests.css" type="text/css" rel="stylesheet"/>
+    <script src="javascript/SocialHackersTests.js"></script>
+</head>
+<body>
+    <div>
+        <div id="messageBox"></div>
+        <div id="content">
+            <div id="reposList">
+                <p>Click the big red button for a list of repositories.</p>
+                 <div>
+                    <svg width="100" height="100" id="myButton">
+                        <circle cx="50" cy="50" r="48" stroke="green" stroke-width="1" fill="red" onclick="youClickedMe();"/>
+                        <text x="22%" y="50%" stroke="white" fill="white" stroke-width="1px" dy=".3em" onclick="youClickedMe();">Press me</text>
+                    </svg>
+                    <div id="jsonContent">
+                        <div id="tblRepos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="searchList">
+                <p>Please enter a repository search term <input id="searchTerm" type="text" size="20" maxlength="50" onkeyup="checkSearchButton();"/>
+                    and then press the search button <button id="searchButton" disabled type="button" onclick="searchSocialHackersAcademyRepos(document.getElementById('searchTerm').value);" >Search</button>
+                </p>
+                <div id="searchResults">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
